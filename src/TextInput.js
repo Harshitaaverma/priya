@@ -9,13 +9,6 @@ import { Controller, useForm } from 'react-hook-form';
 import axios from 'axios';
 import { Store } from './Store';
 
-import { SpeechProvider } from "@speechly/react-client";
-
-import { PushToTalkButton, PushToTalkButtonContainer,
-  BigTranscript,
-  BigTranscriptContainer,
-  IntroPopup } from "@speechly/react-ui";
-
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -50,7 +43,7 @@ export const TextInput = () => {
 
  async function submitHandler({ message }) {
     resetField('message');
-    const { data } = await axios.post(`https://15db-106-210-32-126.in.ngrok.io/webhooks/rest/webhook`, {
+    const { data } = await axios.post(`https://ba94-2409-4050-e38-aab8-c9ee-9a86-fb18-24d9.in.ngrok.io/webhooks/rest/webhook`, {
       sender: "test_user",
       message: message
     });
@@ -95,7 +88,7 @@ export const TextInput = () => {
   }
 
   async function speechSubmitHandler(message) {
-    const { data } = await axios.post(`https://15db-106-210-32-126.in.ngrok.io/webhooks/rest/webhook`, {
+    const { data } = await axios.post(`https://ba94-2409-4050-e38-aab8-c9ee-9a86-fb18-24d9.in.ngrok.io/webhooks/rest/webhook`, {
       sender: "test_user",
       message: message
     });
