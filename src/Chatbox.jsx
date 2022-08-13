@@ -62,48 +62,6 @@ export default function Chatbox() {
           avatarDisp={true}
         />
 
-        <MessageRight
-          message="Hello! How may I help you?"
-          timestamp="MM/DD 00:00"
-          photoURL="igdtuw.jpg"
-          displayName="Me"
-          avatarDisp={true}
-        />
-
-<MessageRight
-          message="Hello! How may I help you?"
-          timestamp="MM/DD 00:00"
-          photoURL="igdtuw.jpg"
-          displayName="Me"
-          avatarDisp={true}
-        />
-
-<MessageRight
-          message="Hello! How may I help you?"
-          timestamp="MM/DD 00:00"
-          photoURL="igdtuw.jpg"
-          displayName="Me"
-          avatarDisp={true}
-        />
-
-<MessageRight
-          message="Hello! How may I help you?"
-          timestamp="MM/DD 00:00"
-          photoURL="igdtuw.jpg"
-          displayName="Me"
-          avatarDisp={true}
-        />
-
-<MessageLeft
-          message="Hello! How may I help you?"
-          timestamp="MM/DD 00:00"
-          photoURL="igdtuw.jpg"
-          displayName="Me"
-          avatarDisp={true}
-        />
-
-
-
 
         {cart.userMessages && cart.userMessages.map((message) => (
           <>
