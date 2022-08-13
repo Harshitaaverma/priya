@@ -43,7 +43,7 @@ export const TextInput = () => {
 
  async function submitHandler({ message }) {
     resetField('message');
-    const { data } = await axios.post(`https://ba94-2409-4050-e38-aab8-c9ee-9a86-fb18-24d9.in.ngrok.io/webhooks/rest/webhook`, {
+    const { data } = await axios.post(`https://ae1e-2409-4050-e38-aab8-d883-5276-6df4-805f.in.ngrok.io/webhooks/rest/webhook`, {
       sender: "test_user",
       message: message
     });
@@ -88,7 +88,7 @@ export const TextInput = () => {
   }
 
   async function speechSubmitHandler(message) {
-    const { data } = await axios.post(`https://ba94-2409-4050-e38-aab8-c9ee-9a86-fb18-24d9.in.ngrok.io/webhooks/rest/webhook`, {
+    const { data } = await axios.post(`https://ae1e-2409-4050-e38-aab8-d883-5276-6df4-805f.in.ngrok.io/webhooks/rest/webhook`, {
       sender: "test_user",
       message: message
     });
